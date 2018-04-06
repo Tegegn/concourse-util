@@ -5,6 +5,8 @@ source "${BASH_SOURCE%/*}/flow-env.sh"
 
 set -e -x
 
+$TEST_OUTPUT_DIRECTORY 
+
 mvn test
 
 chmod 777 $TEST_OUTPUT_DIRECTORY
